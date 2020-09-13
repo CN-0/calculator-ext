@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      button{
+        width: 50px;
+        height: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        color: black;
+        margin: 3px;
+      }
+      .clear{
+        background-color: rgba(202, 25, 9, 0.7);
+        font-size: 16px;
+        outline: none;
+      }
+      .equals{
+        width: 50px;
+        height: 218px;
+        background-color: rgba(35, 58, 161, 0.74);
+        outline: none;
+      }
+      .keypad, .numbers{
+        display: flex;
+        flex-direction: column;
+      }
+      .row, .main{
+        display: flex;
+      }
+      .result{
+        box-sizing: border-box;
+        width: 218px;
+        height: 60px;
+        margin: 0px 3px;
+        padding: 5px 10px;
+        font-size: 20px;
+        font-weight: 700;
+        background-color: rgba(255,255,255,.9);
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calc">
+      <div class="result">0</div>
+      <div id="keypad" class="keypad">
+        <div class="row">
+          <button value="+" class="btn">
+            +
+          </button>
+          <button value="-" class="btn">
+            -
+          </button>
+          <button value="*" class="btn">
+            x
+          </button>
+          <button value="/" class="btn">
+            /
+          </button>
+        </div>
+        <div class="main">
+          <div class="numbers">         
+            <div class="row">
+              <button value="7" class="btn">
+                7
+              </button>
+              <button value="8" class="btn">
+                8
+              </button>
+              <button value="9" class="btn">
+                9
+              </button>
+            </div>
+            <div class="row">
+              <button value="4" class="btn">
+                4
+              </button>
+              <button value="5" class="btn">
+                5          
+              </button>
+              <button value="6" class="btn">
+                6
+              </button>
+            </div>
+            <div class="row">
+              <button value="1" class="btn">
+                1
+              </button>
+              <button value="2" class="btn">
+                2
+              </button>
+              <button value="3" class="btn">
+                3
+              </button>
+            </div>
+            <div class="row">
+              <button value="0" class="btn">
+                0
+              </button>
+              <button value="." class="btn">
+                .
+              </button>
+              <button value="clear" class="btn clear">
+                CE
+              </button>
+            </div>
+          </div>
+          <button value="equals" class="btn equals">
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
